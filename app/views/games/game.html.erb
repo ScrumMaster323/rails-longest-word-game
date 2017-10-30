@@ -1,0 +1,20 @@
+<h1>Games#game</h1>
+<p>Find me in app/views/games/game.html.erb</p>
+
+<h2>Welcome to the longest word-game!</h2>
+<p>Here is your grid:</p>
+<p><%= @grid %></p>
+
+
+<h3>What's your best shot?</h3>
+
+<form action="/games/score" method="get">
+  <input type="text" name="user_guess" placeholder="What's your guess">
+  <input type="hidden" name="start_time" value="<%=@start_time%>">
+  <input type="hidden" name="grid" value="<%=@grid%>">
+  <input type="submit">
+
+</form>
+
+
+

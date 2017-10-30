@@ -1,0 +1,2 @@
+module LongestwordgamesHelper
+end
